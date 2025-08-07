@@ -15,4 +15,10 @@ steps:
   inputs:
     command: 'init'
 
+- task: TerraformCLI@0
+  displayName: 'Terraform Format Check'
+  inputs:
+    command: 'fmt'
+    arguments: '-check'
+    workingDirectory: 'C:\Users\Dell\Desktop\classicpipeline'
 
