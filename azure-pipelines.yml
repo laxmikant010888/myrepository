@@ -1,0 +1,9 @@
+trigger:
+- main   # ya master, ya jo bhi aapki branch ho
+
+pool:
+  vmImage: 'Apna Agent Pool'
+
+steps:
+- script: echo "Hello, YAML Pipeline is running!"
+  displayName: 'Run simple script'
