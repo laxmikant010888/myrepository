@@ -8,3 +8,7 @@ steps:
   inputs:
     command: 'init'
     allowTelemetryCollection: true
+- task: TerraformCLI@2
+  inputs:
+    command: 'fmt'
+    allowTelemetryCollection: true
